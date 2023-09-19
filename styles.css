@@ -1,0 +1,83 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #39435e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.editor {
+    background-color: #64a3b1; 
+    border-radius: 20px; 
+    box-shadow: 50px 50px 15px rgba(0, 0, 0, 0.2); 
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #111642; 
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.toolbar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #0f0e0e;
+    transition: background-color 0.3s ease;
+}
+
+button.format {
+    background-color: #007BFF; 
+}
+
+button.align {
+    background-color: #4CAF50;
+}
+button.clear, button.undo {
+    background-color: #DC3545; 
+}
+
+button:hover {
+    background-color: #656261; 
+    color: #fff;
+}
+
+.text-area textarea {
+    width: 95%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: both;
+    overflow: auto; 
+}
+
+
+@media screen and (max-width: 600px) {
+    .toolbar button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .text-area textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
